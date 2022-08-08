@@ -1,0 +1,81 @@
+{%extends "base.html"%}
+{%block main_content%}
+    <!-- Head -->
+    <section class="docs-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">Isyblocks</h1>
+                <p class="lead">
+                    Learn how we work with the environment
+                </p>
+            </div>
+            <img src="images/Building.png" alt="">
+        </div>
+    </section>
+
+    <!-- Docs main -->
+    <section class="docs-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <h3 class="my-2">Essentials</h3>
+                <nav>
+                    <ul>
+                        <li><a href="docs.html">Introduction</a></li>
+                        <li><a href="Questions.html">What are Isyblocks really?</a></li>
+                    </ul>
+                </nav>
+
+                <h3 class="my-2">A deeper dive</h3>
+                <nav>
+                    <ul>
+                            <li><a class="text-primary" href="ActionPlan.html">Action Plan</a></li>
+							<li><a href="Help.html">How can I help?</a></li>
+							<li><a href="Tale.html">Telling our tale</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card">
+                <h3>How do Isyblocks work?</h3>
+                <p1>Isyblocks are a complex and rigorous system which we are going to break into 3 distinct parts - The policies, The materials, and the layout.</p1>
+                <h3>Wait a second!</h3>
+                <p1>I would recommend you download our Powerpoint as it has even more information on Isyblocks!  </p1>
+                </br></br><a href="{{ url_for('static',filename='Other/isyBlocks.pptx') }}" class="btn btn-primary">Install Powerpoint</a>
+
+                <h3>The layout</h3>
+                
+                <img src= "{{ url_for('static',filename='images/Layout.png') }}" alt="well">
+
+                <p1>The rectangle above shows the basic layout of Isyblocks. This is what it means <ul>
+                    <li>- The black line in the centre and bottom-left hand edges represents the road where vehicles are allowed</li>
+                    <li>- The orange zone is reserved for commercial buildings, disabled people's housing, and key buildings</li>
+                    <li>- The green zone is symbolizing normal houses and non-key buildings.</li>
+                </ul></p1>
+
+                <h3>The materials</h3>
+                <p1><ul>
+                    <li>- Incorporating bamboo in housing by replacing the steel rebar in houses. </li>
+                    <li>- Bamboo is also going to be used for flooring as carpet production releases chemicals in the sky.</li>
+                    <li>- Ashcrete will be used to replace cement.</li>
+                    <li>- The houses will be painted in "Celour".</li>
+                </ul></p1>
+                <h3>Facts on the materials</h3>
+                <p1>
+                    <li>Bamboo has greater tensile strength (or resistance to being pulled apart) than steel, and it withstands compression better than concrete.</li>
+                    <li>Bamboo is 2-3 times harder than most hardwoods, including oak!</li>
+                    <li>Carpets are primarily made up of petroleum products, such as nylon, vinyl, and PVC.</li>
+                    <li>About 93% of Ashcrete is made of recycled material, making it immediately more environmentally viable than concrete.</li>
+                    <li>Celour is a Co2 absorbing paint and claims to absorb 27 grams of Co2 per 135 grams of paint.</li>
+                </p1>
+                <h3>The policies</h3>
+                <p1><ul>
+                    <li>- Have a lot of open space.</li>
+                    <li>- Have the streets be “living” with plants and animals.</li>
+                    <li>- No cars allowed on streets in the block.</li>
+                    <li>- Have all the necessities have a close proximity to each other to promote walking.</li>
+                </ul></p1>
+            </br></br><a href="Tale.html" class="btn btn-dark short-button"id = "custom-space">Tale</a>
+                <a href="Help.html" class="btn btn-dark long-button" id = "custom-space">Environment</a>
+            </div>
+        </div>
+    </section>
+{%endblock%}

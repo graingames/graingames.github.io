@@ -1,0 +1,88 @@
+{%extends "base.html"%}
+{%block main_content%}
+<!-- Showcase -->
+<section class="showcase">
+    <div class="container grid">
+        <div class="showcase-text">
+            <h1>Saving mother nature</h1>
+            <p>Whilst humans have been making their lives more luxurious, mother nature has slowly been dying. At Isyblox we are trying to save mother nature by improving housing by various means.</p>
+            <a href="features.html" class="btn btn-outline">Read More</a>
+        </div>
+
+        <div class="showcase-form card text-center">
+            <h2>Sign up for our newsletter!</h2>
+            <p id="tiny">Asterik(*) means required.</p> 
+            <div>
+                <form action="#" method="POST" class="validate" target="_blank" novalidate>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name*"  required id="mce-FNAME">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="phone_no" placeholder="Phone no." id="mce-FNAME">
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email*" required id="mce-EMAIL">
+                    </div>
+
+                    <input type="submit" value="Confirm" class="btn btn-primary button">
+ 
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+    <div class="container">
+        <h2 class="stats-heading text-center my-1">
+            Welcome to the next generation of housing
+        </h2>
+
+        <div class="grid grid-3 text-center my-4">
+            <div>
+                <h3>60%</h3>
+                <p class="text-secondary">Less emissions*</p>
+            </div>
+            <div>
+                <h3>10X</h3>
+                <p class="text-secondary">Less cars</p>
+            </div>
+            <div>
+                <h3>∞</h3>
+                <p class="text-secondary"> Times better for our blue planet</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cli -->
+<section class="cli">
+    <div class="container grid">
+        <img src= "{{ url_for('static',filename='images/Houses.jfif') }}" alt="fwe" id="small">
+        <div class="card">
+            <h3>Improving the environment, one step at a time.</h3>
+        </div>
+        <div class="card">
+            <h3>Made so that there is a better future for us all.</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Cloud -->
+<section class="cloud bg-primary my-2 py-2">
+    <div class="container grid">
+        <div class="text-center">
+            <h2 class="lg">Beautiful developments</h2>
+            <p class="lead my-1">Houses like never before. Smog, noise and traffic have been left behind to give a tranquil, serene and safe atmosphere to Isyblox.</p>
+            <a href="features.html" class="btn btn-dark">Read More</a>
+        </div>
+        
+        <img src= "{{ url_for('static',filename='images/Leaf.png') }}" alt="" id = "r"class="small">
+    </div>
+</section>
+
+
+<a href="docs.html" class="btn btn-dark long-button">Tell me more!</a>
+{%endblock%}
+    

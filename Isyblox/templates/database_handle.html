@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" 
+    href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link rel= "stylesheet" type= "text/css" 
+    href= "{{ url_for('static',filename='styles/utilities.css') }}">   
+    <title>Isyblox | Everyone can help the environment</title>
+</head>
+<body>
+    <div class="showcase-form card text-center">
+        <h2>Choose the email to be deleted</h2>
+        <p id="tiny">Asterik(*) means required.</p> 
+        <div>
+            <form action="#" method="POST" class="validate" target="_blank" novalidate>
+                <div class="form-control">
+                    <input type="text" name="email" placeholder="email*"  required id="mce-FNAME">
+                </div>
+                <input type="submit" value="Confirm" class="btn btn-primary button">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

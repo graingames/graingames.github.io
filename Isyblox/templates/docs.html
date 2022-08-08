@@ -1,0 +1,61 @@
+{%extends "base.html"%}
+{%block main_content%}
+    <!-- Head -->
+    <section class="docs-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">Isyblox</h1>
+                <p class="lead">
+                    Learn how we work with the environment
+                </p>
+            </div>
+            <img src="images/Building.png" alt="">
+        </div>
+    </section>
+
+    <!-- Docs main -->
+    <section class="docs-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <h3 class="my-2">Essentials</h3>
+                <nav>
+                    <ul>
+                        <li><a class="text-primary" href="docs.html">Introduction</a></li>
+                        <li><a href="Questions.html">What are Isyblox really?</a></li>
+                    </ul>
+                </nav>
+
+                <h3 class="my-2">A deeper dive</h3>
+                <nav>
+                    <ul>
+                        <li><a href="ActionPlan.html">Action Plan</a></li>
+							<li><a href="Help.html">How can I help?</a></li>
+							<li><a href="Tale.html">Telling our tale</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card">
+                <h1><b>A brief overview</b></h1>
+                <p1>Isyblox is a modern attempt to solve the issue of housing using an arsenal of tools to carry out this goal. Isyblox is an extremely well-designed system which ensures quality life for all who use it whilst helping the environment drastically unlike its earlier counterparts. Isyblox has been created thanks to 3 people, Islam, Sachit, Yeni (I, S, Y). We strive for environmental revolution and hope other people join us in the effort to save the environment. The project is ever evolving learning new things and innovating on the way and will soon be an earnest effort in making cities what they are meant to be, a green and healthy living environment. </p1>
+
+                <h3>Check out our PowerPoint</h3>
+                <p1>Carefully crafted to give accurate information about Isyblox in a digestible and detailed manner. </p1>
+                <br><br>
+                <a href="{{ url_for('static',filename='Other/isyBlocks.pptx') }}" class="btn btn-primary">Install Powerpoint</a>
+
+                <h3>Goals</h3>
+                <ul>
+                    <li>Have housing that encourages outdoor activities for all age groups, genders and interests. </li>
+                    <li>To stop pollution in cities, towns and villages by:</li>
+                    <li><ul>
+                        <li> -Have houses be built from environmentally friendly materials.</li>
+                        <li> -Create realistic policies and expectation to prevent as much pollution as possible in developments. </li>
+                    </ul></li>
+                </ul>
+                <a href="Questions.html" class="btn btn-dark short-button">Next</a>
+
+            </div>
+        </div>
+    </section>
+
+{%endblock%}
