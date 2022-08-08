@@ -34,7 +34,7 @@ h1,
 h2 {
   font-weight: 300;
   line-height: 1.2;
-  margin-left: 10px;
+  margin-left: 10px 0;
 }
 
 p {
@@ -109,7 +109,7 @@ pre {
 .showcase-form {
   position: relative;
   top: 60px;
-  height: 355px;
+  height: 300px;
   width: 400px;
   padding: 40px;
   z-index: 100;
@@ -140,8 +140,8 @@ pre {
 .showcase::after {
   content: '';
   position: absolute;
-  height: 130px;
-  bottom: -60px;
+  height: 120px;
+  bottom: -50px;
   right: 0;
   left: 0;
   background: var(--primary-color);
@@ -239,7 +239,7 @@ pre {
 
 /* Footer */
 .footer{
-  font-size: 112%;
+  font-size: 120%;
 }
 
 .footer .social a {
@@ -257,10 +257,7 @@ pre {
 .fa-twitter:hover {
   color: #52b0ea;
 }
-#custom-space{
-  margin: 0px;
-  margin-top: 15px;
-}
+
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
@@ -324,7 +321,7 @@ text-align: center;}
 /* Tablets and under */
 @media (max-width: 870px) {
 
-  #r{display:none;}
+  #r{display: none;}
 
   .short-button{    padding: 10px 10px;
     text-align: center;

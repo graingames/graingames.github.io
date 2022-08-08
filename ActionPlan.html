@@ -1,5 +1,28 @@
-{%extends "base.html"%}
-{%block main_content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Isyblocks | Everyone can help the environment</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Isyblocks</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Insights</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
     <!-- Head -->
     <section class="docs-head bg-primary py-3">
         <div class="container grid">
@@ -39,11 +62,10 @@
                 <p1>Isyblocks are a complex and rigorous system which we are going to break into 3 distinct parts - The policies, The materials, and the layout.</p1>
                 <h3>Wait a second!</h3>
                 <p1>I would recommend you download our Powerpoint as it has even more information on Isyblocks!  </p1>
-                </br></br><a href="{{ url_for('static',filename='Other/isyBlocks.pptx') }}" class="btn btn-primary">Install Powerpoint</a>
+                </br></br><a href="Other/isyBlocks.pptx" class="btn btn-primary">Install Powerpoint</a>
 
                 <h3>The layout</h3>
-                
-                <img src= "{{ url_for('static',filename='images/Layout.png') }}" alt="well">
+                <img src="images/Layout.png" alt="well">
 
                 <p1>The rectangle above shows the basic layout of Isyblocks. This is what it means <ul>
                     <li>- The black line in the centre and bottom-left hand edges represents the road where vehicles are allowed</li>
@@ -73,9 +95,33 @@
                     <li>- No cars allowed on streets in the block.</li>
                     <li>- Have all the necessities have a close proximity to each other to promote walking.</li>
                 </ul></p1>
-            </br></br><a href="Tale.html" class="btn btn-dark short-button"id = "custom-space">Tale</a>
-                <a href="Help.html" class="btn btn-dark long-button" id = "custom-space">Environment</a>
+            </br></br><a href="Tale.html" class="btn btn-dark short-button">Tale</a>
+                <a href="Help.html" class="btn btn-dark long-button">Environment</a>
             </div>
         </div>
     </section>
-{%endblock%}
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Isyblocks
+                </h1>
+                <p>Created in 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Insights</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100083217488739"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UCTm2kUUfxSbEe9ad0skfYzg"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://twitter.com/ISYblox"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,63 +1,129 @@
 <!DOCTYPE html>
-<html>
-   <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" type= "text/css" 
-    href= "{{ url_for('static',filename='styles/style.css') }}">
-    <link rel= "stylesheet" type= "text/css" 
-    href= "{{ url_for('static',filename='styles/utilities.css') }}">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Isyblox | Everyone can help the environment</title>
-    <meta http-equiv = "refresh" content = "0;url = home.html" />
-   </head>
-   <body>
-      <!-- Showcase -->
-<section class="showcase">
-    <div class="container grid">
-        <div class="showcase-text">
-            <h1>Saving mother nature</h1>
-            <p>Whilst humans have been making their lives more luxurious, mother nature has slowly been dying. At Isyblox we are trying to save mother nature by improving housing by various means.</p>
-            <a href="features.html" class="btn btn-outline">Read More</a>
-        </div>
-
-        <div class="showcase-form card">
-            <h2>Sign up for our newsletter!</h2>
-            <div>
-                <form action="connect.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required id="mce-FNAME">
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required id="mce-EMAIL">
-                    </div>
-                    <input type="submit" value="Confirm" class="btn btn-primary button"  id="mc-embedded-subscribe">
-                </form>
-            </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3365155366780180"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Isyblox</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Insights</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
-</section>
-
-<!-- Stats -->
-<section class="stats">
-    <div class="container">
-        <h3 class="stats-heading text-center my-1">
-            Welcome to the next generation of housing
-        </h3>
-
-        <div class="grid grid-3 text-center my-4">
-            <div>
-                <h3>60%</h3>
-                <p class="text-secondary">Less emissions*</p>
+    
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Saving mother nature</h1>
+                <p>Whilst humans have been making their lives more luxurious, mother nature has slowly been dying. At Isyblox we are trying to save mother nature by improving housing by various means.</p>
+                <a href="features.html" class="btn btn-outline">Read More</a>
             </div>
-            <div>
-                <h3>10X</h3>
-                <p class="text-secondary">Less cars</p>
-            </div>
-            <div>
-                <h3>∞</h3>
-                <p class="text-secondary"> Times better for our blue planet</p>
+
+            <div class="showcase-form card">
+                <h2>Sign up for our newsletter!</h2>
+                <div>
+                    <form action="connect.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div class="form-control">
+                            <input type="text" name="name" placeholder="Name" required id="mce-FNAME">
+                        </div>
+                        <div class="form-control">
+                            <input type="email" name="email" placeholder="Email" required id="mce-EMAIL">
+                        </div>
+                        <input type="submit" value="Confirm" class="btn btn-primary button"  id="mc-embedded-subscribe">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-   </body>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1">
+                Welcome to the next generation of housing
+            </h3>
+
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <h3>60%</h3>
+                    <p class="text-secondary">Less emissions*</p>
+                </div>
+                <div>
+                    <h3>10X</h3>
+                    <p class="text-secondary">Less cars</p>
+                </div>
+                <div>
+                    <h3>∞</h3>
+                    <p class="text-secondary"> Times better for our blue planet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cli -->
+    <section class="cli">
+        <div class="container grid">
+            <img src="images/Houses.jfif" alt="" id="small">
+            <div class="card">
+                <h3>Improving the environment, one step at a time.</h3>
+            </div>
+            <div class="card">
+                <h3>Made so that there is a better future for us all.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud -->
+    <section class="cloud bg-primary my-2 py-2">
+        <div class="container grid">
+            <div class="text-center">
+                <h2 class="lg">Beautiful developments</h2>
+                <p class="lead my-1">Houses like never before. Smog, noise and traffic have been left behind to give a tranquil, serene and safe atmosphere to Isyblox.</p>
+                <a href="features.html" class="btn btn-dark">Read More</a>
+            </div>
+            <img src="images/Leaf.png" alt="" id = "r"class="small">
+        </div>
+    </section>
+
+    <!--Custom -->
+    <a href="docs.html" class="btn btn-dark long-button">Tell me more!</a>
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Isyblox
+                </h1>
+                <p>Created in 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Insights</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100083217488739"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UCTm2kUUfxSbEe9ad0skfYzg"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://twitter.com/ISYblox"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="Javascript/Main.js"></script>
+</body>
+</html>

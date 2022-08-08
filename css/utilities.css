@@ -146,16 +146,15 @@
   align-items: center;
   height: 100%;
 }
-#tiny{
-  font-size: 10px;
-  color: rgb(79, 79, 79);
-}
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-
+/* Margin */
+.my-1 {
+  margin: 1rem 0;
+}
 
 .my-2 {
   margin: 1.5rem 0;
